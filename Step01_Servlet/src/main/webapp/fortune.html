@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>오늘의 운세 페이지</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+</head>
+<body>
+	<p class="alert alert-primary">오늘의 운세 : <span id="fortune"></span></p>
+	<script>
+		//오늘의 운세를 배열에 미리 준비한다.
+		const fortunes=["1","2","3","4","5"];
+		//0~4 사이의 랜덤한 정수를 얻어낸다.
+		const ranNum=Math.floor(Math.random()*5);
+		//id 가 fourtune 인 요소에 오늘의 운세를 출력한다.
+		document.querySelector("#fortune").innerText=fortunes[ranNum];
+	</script>
+</body>
+</html>
