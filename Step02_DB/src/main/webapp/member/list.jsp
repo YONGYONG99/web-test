@@ -22,7 +22,7 @@
 
 <%-- navbar.jsp 포합시키기 --%>
 <jsp:include page="/include/navbar.jsp">
-	<jsp.param value="member" name="thisPage"/>
+	<jsp:param value="member" name="thisPage"/>
 </jsp:include>
 
 <div class="container">

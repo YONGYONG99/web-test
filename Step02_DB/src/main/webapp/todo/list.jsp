@@ -22,8 +22,8 @@
 <body>
 <body>
 <%-- navbar.jsp 포합시키기 --%>
-<jsp:include page="/include/navbar.jsp"/>
-	<jsp.param value="todo" name="thisPage"/>
+<jsp:include page="/include/navbar.jsp">
+	<jsp:param value="todo" name="thisPage"/>
 </jsp:include>
 	
 	<div class="container">

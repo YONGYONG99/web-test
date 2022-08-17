@@ -22,7 +22,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
        <ul class="navbar-nav">
-          <li class="nav-item">
+          <li class="nav-item ">
              <a class="nav-link active" href="${pageContext.request.contextPath }/member/list.jsp">회원목록</a>
           </li>
           <li class="nav-item">
@@ -48,7 +48,7 @@
              <a class="nav-link" href="${pageContext.request.contextPath }/member/list.jsp">회원목록</a>
           </li>
           <li class="nav-item">
-             <a class="nav-link active" href="${pageContext.request.contextPath }/todo/list.jsp">할일목록</a>
+             <a class="nav-link active " href="${pageContext.request.contextPath }/todo/list.jsp">할일목록</a>
           </li>
        </ul>
     </div>
