@@ -21,7 +21,18 @@
 </head>
 <body>
 	<div class="container">
-		<h1>수정 폼</h1>
+	  <nav class="mt-2">
+         <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+               <a href="${pageContext.request.contextPath }/index.jsp">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+               <a href="${pageContext.request.contextPath }/member/list.jsp">할일목록</a>
+            </li>
+            <li class="breadcrumb-item active">수정 페이지</li>
+         </ol>
+      </nav>
+		<h3>수정 페이지</h3>
 		<form action="update.jsp" method="post">
 			<input type="hidden" name="num" value="<%=dto.getNum()%>"/>
 			<div class="mb-3 row">
@@ -40,9 +51,11 @@
 				<label class="form-label" for="regdate">마감일</label>
 				<input class="form-control" type="date" name="regdate" id="regdate" value="<%=dto.getRegdate()%>" />
 			</div>
+			<br />
 			<button class="btn btn-outline-primary btn-sm" type="submit">수정확인</button>
 			<button class="btn btn-outline-danger btn-sm" type="reset">취소</button>
 		</form>
 	</div>
+<jsp:include page="/include/footer.jsp"></jsp:include>
 </body>
 </html>

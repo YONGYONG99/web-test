@@ -12,7 +12,18 @@
 </head>
 <body>
 <div class="container">
-	<h1>할일 추가 폼</h1>
+      <nav class="mt-2">
+         <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+               <a href="${pageContext.request.contextPath }/index.jsp">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+               <a href="${pageContext.request.contextPath }/member/list.jsp">할인목록</a>
+            </li>
+            <li class="breadcrumb-item active">할일 추가 페이지</li>
+         </ol>
+      </nav>
+	<h3>할일 추가 페이지</h3>
 		<form action="insert.jsp" method="post">
 		<div class="form-floating mb-3">
 			<input class="form-control" type="text"   name="content" id="content" placeholder="할 일 입력..." />
@@ -25,5 +36,6 @@
 		<button class="btn btn-primary btn-sm" type="submit">등록</button>
 		</form>
 	</div>
+<jsp:include page="/include/footer.jsp"></jsp:include>
 </body>
 </html>
